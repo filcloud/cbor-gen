@@ -13,7 +13,7 @@ import (
 
 const MaxLength = 8192
 
-const ByteArrayMaxLen = 2 << 20
+const ByteArrayMaxLen = 64 << 20
 
 var (
 	cidType      = reflect.TypeOf(cid.Cid{})

@@ -10,7 +10,7 @@ import (
 
 const MaxLength = 8192
 
-const ByteArrayMaxLen = 2 << 20
+const ByteArrayMaxLen = 64 << 20
 
 func doTemplate(w io.Writer, info interface{}, templ string) error {
 	t := template.Must(template.New("").
